@@ -13,6 +13,7 @@ const pump = require("pump");
 const connect = require("gulp-connect"); // 实时刷新
 const imagemin = require("gulp-imagemin"); // 图片压缩
 
+// 定义相关路径
 const paths = {
     html: 'src/html/*.html',
     thtml: 'build',
@@ -22,7 +23,7 @@ const paths = {
     tcss: 'build/css',
     js: 'src/js/*.js',
     tjs: 'build/js',
-    // 新增
+    // 新增图片压缩
     imgs: 'src/imgs/*.{png, jpg, gif, ico}',
     timgs: 'build/imgs'
 }
