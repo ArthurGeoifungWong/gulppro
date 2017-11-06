@@ -1,0 +1,16 @@
+$color: pink;
+@mixin normalBtn () {
+    padding: 4px;
+    border: 1px solid orange;
+}
+@mixin endTip () {
+    color: $color;
+}
+
+.testBtn {
+    @include normalBtn();
+    cursor: pointer;
+}
+.endStyle {
+    @include endTip();
+}
